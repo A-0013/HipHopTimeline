@@ -1,0 +1,71 @@
+/* Base Styles */
+body {
+    background: #f4d0ab;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    font-family: "Monoton", serif;
+    font-size: 8vw; /* Responsive font size based on viewport width */
+    font-style: normal;
+    margin: 5%; /* Relative margin */
+}
+
+/* Circle and Line Container */
+.circle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Takes up remaining space */
+    width: 100%;
+}
+
+/* Circle Styling */
+.circle {
+    width: 20vmin; /* Responsive size based on viewport min dimension */
+    height: 20vmin;
+    background-color: #e74c3c; /* Red circle */
+    border-radius: 50%; /* Makes it a circle */
+    position: relative;
+    z-index: 1; /* Ensures the circle is above the line */
+}
+
+/* Vertical Line Styling */
+.vertical-line {
+    width: 10vmin; /* Responsive thickness */
+    height: 410vmin; /* Responsive length */
+    background-color: #0B7978; /* Blue line */
+    position: absolute;
+    top: 90%; /* Position below the circle */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+/* Timeline Item Styling */
+.timeline-item {
+    position: absolute;
+    margin: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 110%;
+}
+
+.timeline-item .content {
+    background: #ffeccd;
+    padding: 5%;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px; /* Space between text and image */
+}
