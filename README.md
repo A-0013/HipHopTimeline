@@ -1,3 +1,3 @@
 # HipHopTimeline
 
-Its a work in progress because reading wikipedia articles is hard and css is harder
+A timeline of major events in the history of hip hop music. It's made with just html and css and is hosted on neocities. It's a work in progress for now.
